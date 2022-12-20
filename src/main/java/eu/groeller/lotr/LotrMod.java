@@ -19,6 +19,8 @@ public class LotrMod implements ModInitializer {
 
 
 	public static final Item GONDOR_SHIELD = new GondorShieldItem(new FabricItemSettings().maxDamage(2500), 10, 13, Items.NETHERITE_INGOT);
+	public static final Item REE =
+			Registry.register(Registries.ITEM, new Identifier("lotrme", "custom_item"), new Item(new FabricItemSettings()));
 
 	@Override
 	public void onInitialize() {

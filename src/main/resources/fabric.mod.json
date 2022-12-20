@@ -14,7 +14,7 @@
   },
 
   "license": "PLACEHOLDER",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/lotrme/icon.png",
 
   "environment": "*",
   "entrypoints": {
