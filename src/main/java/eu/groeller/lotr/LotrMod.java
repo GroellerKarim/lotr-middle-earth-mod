@@ -3,7 +3,9 @@ package eu.groeller.lotr;
 import eu.groeller.lotr.items.GondorShieldItem;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -19,8 +21,6 @@ public class LotrMod implements ModInitializer {
 
 
 	public static final Item GONDOR_SHIELD = new GondorShieldItem(new FabricItemSettings().maxDamage(2500), 10, 13, Items.NETHERITE_INGOT);
-	public static final Item REE =
-			Registry.register(Registries.ITEM, new Identifier("lotrme", "custom_item"), new Item(new FabricItemSettings()));
 
 	@Override
 	public void onInitialize() {
@@ -30,5 +30,9 @@ public class LotrMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		Registry.register(Registries.ITEM, new Identifier("lotrme", "gondor_shield"), GONDOR_SHIELD);
+
+
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries ->
+				entries.add(GONDOR_SHIELD));
 	}
 }
