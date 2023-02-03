@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "lotrme",
+  "version": "${version}",
+
+  "name": "Lord of the Rings: Middle-Earth",
+  "description": "Bringing the world of Ardas into minecraft!",
+  "authors": [
+    "Karim Jonas Groeller (mirak441)"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "MIT License",
+  "icon": "",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "eu.groeller.lotrme.LotrMod"
+    ],
+    "client": [
+      "eu.groeller.lotrme.LotrModClient"
+    ]
+  },
+  "mixins": [
+    "lotrme.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
