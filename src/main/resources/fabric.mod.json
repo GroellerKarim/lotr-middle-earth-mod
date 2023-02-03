@@ -4,9 +4,10 @@
   "version": "${version}",
 
   "name": "Lord of the Rings: Middle Earth",
-  "description": "Bringing the world of Ardas into life!",
+  "description": "Bringing the world of Arda into minecraft!",
   "authors": [
-    "Karim Jonas Gröller"
+    "Karim Jonas Gröller (mirak441)",
+    "Jona Edtmair (AnoJedt)"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
