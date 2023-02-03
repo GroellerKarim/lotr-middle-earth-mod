@@ -30,6 +30,6 @@ public class WargEntity extends AnimalEntity implements IAnimatable {
 
     @Override
     public AnimationFactory getFactory() {
-        return null;
+        return factory;
     }
 }
